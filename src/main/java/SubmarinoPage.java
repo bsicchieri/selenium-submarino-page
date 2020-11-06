@@ -9,7 +9,7 @@ public class SubmarinoPage {
 	}
 	
 	public void setSite() {
-		dsl.buscarPagina("https://www.submarino.com.br/");
+		dsl.acessarURL("https://www.submarino.com.br/");
 	}
 	
 	public void validaSite() {
@@ -54,7 +54,7 @@ public class SubmarinoPage {
 	}
 	
 	public void validaProdutoCarrinho() {
-		dsl.validarTrueXpath("//*[@class='productsandfreight__wrapper']", 
+		dsl.validarTrueXpath("//*[@class='link-default clearfix']", 
 				"Samsung Smart TV 55\" Crystal UHD 55TU8000 4K, Wi-fi, Borda Infinita, Alexa built in, Controle Único, Visual Livre de Cabos, Modo Ambiente Foto e Processador Crystal 4K");
 	}
 }

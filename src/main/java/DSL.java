@@ -4,14 +4,14 @@ import org.openqa.selenium.WebDriver;
 
 public class DSL {
 	
-	private WebDriver driver;
+	WebDriver driver;
 
 	public DSL(WebDriver driver) {
 		this.driver = driver;
 	}
-	
-	public void buscarPagina(String texto){
-		driver.get(texto);
+
+	public void acessarURL(String url){
+		driver.get(url);
 	}
 	
 	public void validarPagina(String texto) {

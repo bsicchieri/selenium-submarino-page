@@ -11,9 +11,10 @@ public class TesteSubmarino {
 	private SubmarinoPage page;
 	
 	@Before
-	public void inicializa() {
+	public void before() {      
 		System.setProperty("webdriver.chrome.driver", "\\driver\\chromedriver.exe");
         this.driver = new ChromeDriver();
+        driver.manage().window().maximize();
         page = new SubmarinoPage(driver);
 	}
 
